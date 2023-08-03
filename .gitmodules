@@ -1,0 +1,3 @@
+[submodule "morphotree"]
+	path = morphotree
+	url = https://github.com/dennisjosesilva/morphotree.git
