@@ -9,12 +9,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)  # optional, ensure standard is supported
 set(CMAKE_CXX_EXTENSIONS OFF)  # optional, keep compiler extensionsn off
 
 
-
+set(BUILD_MORPHOTREE_SHARED ON)
+add_subdirectory(morphotree/src)
 add_subdirectory(pybind11)
 
 # Setting up morphotree library
-list(APPEND CMAKE_PREFIX_PATH ../)
-find_package(morphotree REQUIRED)
 
 #if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
 #    add_compile_options(-Wnoc++11-narrowing )
